@@ -74,7 +74,7 @@ def mars_facts():
 
     df.columns=['Description', 'Mars', 'Earth']
     df.set_index('Description', inplace=True)
-    return df.to_html()
+    return df.to_html(classes="table table-striped table-condensed")
 
 def hemisphere_images(browser):
     # ### Hemispheres
